@@ -1,3 +1,12 @@
+.container_foto {
+  width: 70%;
+  margin: auto;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 img {
   width: 500px;
   height: 300px;
@@ -6,15 +15,24 @@ img {
 i {
   font-size: 50px;
 }
-.active {
+
+.container_foto .active {
   display: inline-block;
 }
 
-.container {
-  width: 70%;
-  margin: auto;
-  background-color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.container_pallini {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: white;
+  bottom: 10px;
+}
+.container_pallini i {
+  font-size: 15px;
+  text-align: center;
+  padding: 20px;
+}
+.container_pallini .active {
+  color: limegreen;
 }
