@@ -1,6 +1,6 @@
 .container_foto {
   width: 70%;
-  padding: 38px;
+  padding: 60px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -20,6 +20,11 @@ img {
   font-size: 50px;
   padding: 0 20px;
   color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.container_foto .far.fa-caret-square-left:hover,
+.container_foto .far.fa-caret-square-right:hover {
+  color: black;
 }
 .container_foto .active {
   display: inline-block;
@@ -31,13 +36,23 @@ img {
   background-color: lightgrey;
   border-radius: 5px;
   color: white;
-  bottom: 5px;
+  bottom: 14px;
 }
 .container_pallini i {
   font-size: 15px;
   text-align: center;
   padding: 6px;
+  transition: all 1.4s ease 0.0s;
+}
+.container_pallini:hover i {
+  font-size: 20px;
+}
+.container_pallini .fas.fa-circle.uno:hover,
+.container_pallini .fas.fa-circle.due:hover,
+.container_pallini .fas.fa-circle.tre:hover,
+.container_pallini .fas.fa-circle.quattro:hover {
+  color: coral;
 }
 .container_pallini .active {
-  color: limegreen;
+  color: coral;
 }
