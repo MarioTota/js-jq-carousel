@@ -51,7 +51,6 @@ $(document).ready(function () {
     }
   )
 
-
   $(".far.fa-caret-square-left").click(
     function prevImg() {
       if ($(".uno").hasClass("active")) {
@@ -83,17 +82,17 @@ $(document).ready(function () {
 
   $(".fas.fa-circle.uno").click(
     function() {
-      if ($("img.uno, .fas.fa-circle.uno").hasClass("active") == true) {
-        $("img.due, .fas.fa-circle.due").removeClass("active");
-        $("img.tre, .fas.fa-circle.tre").removeClass("active");
-        $("img.quattro, .fas.fa-circle.quattro").removeClass("active");
-      } else if ($(".due, .fas.fa-circle.due").hasClass("active") == true) {
+      if ($("img.uno, .fas.fa-circle.uno").hasClass("active")) {
+        $("img.due, .fas.fa-circle.due", 
+          "img.tre, .fas.fa-circle.tre", 
+          "img.quattro, .fas.fa-circle.quattro").removeClass("active");
+      } else if ($(".due, .fas.fa-circle.due").hasClass("active")) {
         $("img.due, .fas.fa-circle.due").removeClass("active");
         $("img.uno, .fas.fa-circle.uno").addClass("active");
-      } else if ($(".tre, .fas.fa-circle.tre").hasClass("active") == true) {
+      } else if ($(".tre, .fas.fa-circle.tre").hasClass("active")) {
         $("img.tre, .fas.fa-circle.tre").removeClass("active");
         $("img.uno, .fas.fa-circle.uno").addClass("active");
-      } else if ($(".quattro, .fas.fa-circle.quattro").hasClass("active") == true) {
+      } else if ($(".quattro, .fas.fa-circle.quattro").hasClass("active")) {
         $("img.quattro, .fas.fa-circle.quattro").removeClass("active");
         $("img.uno, .fas.fa-circle.uno").addClass("active");
       }
@@ -102,17 +101,17 @@ $(document).ready(function () {
 
   $(".fas.fa-circle.due").click(
     function() {
-      if ($("img.uno, .fas.fa-circle.uno").hasClass("active") == true) {
+      if ($("img.uno, .fas.fa-circle.uno").hasClass("active")) {
         $("img.uno, .fas.fa-circle.uno").removeClass("active");
         $("img.due, .fas.fa-circle.due").addClass("active");
-      } else if ($(".due, .fas.fa-circle.due").hasClass("active") == true) {
-        $("img.uno, .fas.fa-circle.uno").removeClass("active");
-        $("img.tre, .fas.fa-circle.tre").removeClass("active");
-        $("img.quattro, .fas.fa-circle.quattro").removeClass("active");
-      } else if ($(".tre, .fas.fa-circle.tre").hasClass("active") == true) {
+      } else if ($(".due, .fas.fa-circle.due").hasClass("active")) {
+        $("img.uno, .fas.fa-circle.uno", 
+          "img.tre, .fas.fa-circle.tre", 
+          "img.quattro, .fas.fa-circle.quattro").removeClass("active");
+      } else if ($(".tre, .fas.fa-circle.tre").hasClass("active")) {
         $("img.tre, .fas.fa-circle.tre").removeClass("active");
         $("img.due, .fas.fa-circle.due").addClass("active");
-      } else if ($(".quattro, .fas.fa-circle.quattro").hasClass("active") == true) {
+      } else if ($(".quattro, .fas.fa-circle.quattro").hasClass("active")) {
         $("img.quattro, .fas.fa-circle.quattro").removeClass("active");
         $("img.due, .fas.fa-circle.due").addClass("active");
       }
@@ -121,17 +120,17 @@ $(document).ready(function () {
 
   $(".fas.fa-circle.tre").click(
     function() {
-      if ($("img.uno, .fas.fa-circle.uno").hasClass("active") == true) {
+      if ($("img.uno, .fas.fa-circle.uno").hasClass("active")) {
         $("img.uno, .fas.fa-circle.uno").removeClass("active");
         $("img.tre, .fas.fa-circle.tre").addClass("active");
-      } else if ($(".due, .fas.fa-circle.due").hasClass("active") == true) {
+      } else if ($(".due, .fas.fa-circle.due").hasClass("active")) {
         $("img.due, .fas.fa-circle.due").removeClass("active");
         $("img.tre, .fas.fa-circle.tre").addClass("active");
-      } else if ($(".tre, .fas.fa-circle.tre").hasClass("active") == true) {
-        $("img.uno, .fas.fa-circle.uno").removeClass("active");
-        $("img.due, .fas.fa-circle.due").removeClass("active");
-        $("img.quattro, .fas.fa-circle.quattro").removeClass("active");
-      } else if ($(".quattro, .fas.fa-circle.quattro").hasClass("active") == true) {
+      } else if ($(".tre, .fas.fa-circle.tre").hasClass("active")) {
+        $("img.uno, .fas.fa-circle.uno",
+          "img.due, .fas.fa-circle.due",
+          "img.quattro, .fas.fa-circle.quattro").removeClass("active");
+      } else if ($(".quattro, .fas.fa-circle.quattro").hasClass("active")) {
         $("img.quattro, .fas.fa-circle.quattro").removeClass("active");
         $("img.tre, .fas.fa-circle.tre").addClass("active");
       }
@@ -140,19 +139,19 @@ $(document).ready(function () {
 
   $(".fas.fa-circle.quattro").click(
     function() {
-      if ($("img.uno, .fas.fa-circle.uno").hasClass("active") == true) {
+      if ($("img.uno, .fas.fa-circle.uno").hasClass("active")) {
         $("img.uno, .fas.fa-circle.uno").removeClass("active");
         $("img.quattro, .fas.fa-circle.quattro").addClass("active");
-      } else if ($(".due, .fas.fa-circle.due").hasClass("active") == true) {
+      } else if ($(".due, .fas.fa-circle.due").hasClass("active")) {
         $("img.due, .fas.fa-circle.due").removeClass("active");
         $("img.quattro, .fas.fa-circle.quattro").addClass("active");
-      } else if ($(".tre, .fas.fa-circle.tre").hasClass("active") == true) {
+      } else if ($(".tre, .fas.fa-circle.tre").hasClass("active")) {
         $("img.tre, .fas.fa-circle.tre").removeClass("active");
         $("img.quattro, .fas.fa-circle.quattro").addClass("active");
-      } else if ($(".quattro, .fas.fa-circle.quattro").hasClass("active") == true) {
-        $("img.uno, .fas.fa-circle.uno").removeClass("active");
-        $("img.due, .fas.fa-circle.due").removeClass("active");
-        $("img.tre, .fas.fa-circle.tre").removeClass("active");
+      } else if ($(".quattro, .fas.fa-circle.quattro").hasClass("active")) {
+        $( "img.uno, .fas.fa-circle.uno",
+           "img.due, .fas.fa-circle.due", 
+           "img.tre, .fas.fa-circle.tre").removeClass("active");
       }
     }
   )
