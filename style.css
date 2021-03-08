@@ -42,7 +42,7 @@ img {
   font-size: 15px;
   text-align: center;
   padding: 6px;
-  transition: all 1.4s ease 0.0s;
+  transition: all 0.7s ease 0.0s;
 }
 .container_pallini:hover i {
   font-size: 20px;

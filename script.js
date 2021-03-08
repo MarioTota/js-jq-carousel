@@ -1,32 +1,32 @@
 $(document).ready(function () {
 //------------- due funzioni generiche-------------------------------
   function nextImg() {
-    if ($(".uno").hasClass("active") == true) {
+    if ($(".uno").hasClass("active")) {
       $(".uno").removeClass("active");
       $(".uno").next().addClass("active");
-    } else if ($(".due").hasClass("active") == true) {
+    } else if ($(".due").hasClass("active")) {
       $(".due").removeClass("active");
       $(".due").next().addClass("active");
-    } else if ($(".tre").hasClass("active") == true) {
+    } else if ($(".tre").hasClass("active")) {
       $(".tre").removeClass("active");
       $(".tre").next().addClass("active");
-    } else if ($(".quattro").hasClass("active") == true) {
+    } else if ($(".quattro").hasClass("active")) {
       $(".quattro").removeClass("active");
       $(".uno").addClass("active");
     }
   }
 
   function prevImg() {
-    if ($(".uno").hasClass("active") == true) {
+    if ($(".uno").hasClass("active")) {
       $(".uno").removeClass("active");
       $(".quattro").addClass("active");
-    } else if ($(".quattro").hasClass("active") == true) {
+    } else if ($(".quattro").hasClass("active")) {
       $(".quattro").removeClass("active");
       $(".quattro").prev().addClass("active");
-    } else if ($(".tre").hasClass("active") == true) {
+    } else if ($(".tre").hasClass("active")) {
       $(".tre").removeClass("active");
       $(".tre").prev().addClass("active");
-    } else if ($(".due").hasClass("active") == true) {
+    } else if ($(".due").hasClass("active")) {
       $(".due").removeClass("active");
       $(".due").prev().addClass("active");
     }
@@ -35,16 +35,16 @@ $(document).ready(function () {
 
   $(".far.fa-caret-square-right").click(
     function nextImg() {
-      if ($(".uno").hasClass("active") == true) {
+      if ($(".uno").hasClass("active")) {
         $(".uno").removeClass("active");
         $(".uno").next().addClass("active");
-      } else if ($(".due").hasClass("active") == true) {
+      } else if ($(".due").hasClass("active")) {
         $(".due").removeClass("active");
         $(".due").next().addClass("active");
-      } else if ($(".tre").hasClass("active") == true) {
+      } else if ($(".tre").hasClass("active")) {
         $(".tre").removeClass("active");
         $(".tre").next().addClass("active");
-      } else if ($(".quattro").hasClass("active") == true) {
+      } else if ($(".quattro").hasClass("active")) {
         $(".quattro").removeClass("active");
         $(".uno").addClass("active");
       }
@@ -54,16 +54,16 @@ $(document).ready(function () {
 
   $(".far.fa-caret-square-left").click(
     function prevImg() {
-      if ($(".uno").hasClass("active") == true) {
+      if ($(".uno").hasClass("active")) {
         $(".uno").removeClass("active");
         $(".quattro").addClass("active");
-      } else if ($(".quattro").hasClass("active") == true) {
+      } else if ($(".quattro").hasClass("active")) {
         $(".quattro").removeClass("active");
         $(".quattro").prev().addClass("active");
-      } else if ($(".tre").hasClass("active") == true) {
+      } else if ($(".tre").hasClass("active")) {
         $(".tre").removeClass("active");
         $(".tre").prev().addClass("active");
-      } else if ($(".due").hasClass("active") == true) {
+      } else if ($(".due").hasClass("active")) {
         $(".due").removeClass("active");
         $(".due").prev().addClass("active");
       }
